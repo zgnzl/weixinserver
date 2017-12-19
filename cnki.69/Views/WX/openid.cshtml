@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "openid";
+    Layout = null;
+}
+
+<h2>您的信息如下：</h2>
+<script>
+    var userinfo = JSON.parse(@(ViewBag.userinfo));
+    for (var i = 0, l = json.length; i < l; i++) {
+
+        for (var key in json[i]) {
+
+            alert(key + ':' + json[i][key]);
+
+        }
+
+    }
+</script>
